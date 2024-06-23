@@ -3,6 +3,9 @@ uuid = "4c107aae-4209-44f4-9a20-09b2edec2395"
 authors = ["Ondrej Winter <ondrej.winter@gmail.com>"]
 version = "0.0.0"
 
+[compat]
+julia = "1.10"
+
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
