@@ -1,6 +1,6 @@
 include("common.jl")
 
-function p_0004(digits::Integer=3)::Integer
+function p_0004(digits::Integer = 3)::Integer
     max_by_digits::Integer = 10^digits - 1
     min_by_digits::Integer = 10^(digits - 1)
     a = max_by_digits

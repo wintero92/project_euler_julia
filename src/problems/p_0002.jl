@@ -1,4 +1,4 @@
-function p_0002(below::Integer=4_000_000)::Integer
+function p_0002(below::Integer = 4_000_000)::Integer
     f3::Integer = 2
     f6::Integer = 0
     r::Integer = 2

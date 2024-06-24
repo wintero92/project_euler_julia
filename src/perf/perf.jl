@@ -33,13 +33,13 @@ for (i, problem) in enumerate(solved_problems)
 end
 
 df = DataFrame(
-    Problem_Number=problem_numbers,
-    Minimum_Time_ns=minimum_times,
-    Maximum_Time_ns=maximum_times,
-    Mean_Time_ns=mean_times,
-    Stddev_Time_ns=stddev_times,
-    Sigma_Low_ns=sigma_low_times,
-    Sigma_High_ns=sigma_high_times
+    Problem_Number = problem_numbers,
+    Minimum_Time_ns = minimum_times,
+    Maximum_Time_ns = maximum_times,
+    Mean_Time_ns = mean_times,
+    Stddev_Time_ns = stddev_times,
+    Sigma_Low_ns = sigma_low_times,
+    Sigma_High_ns = sigma_high_times,
 )
 
 CSV.write("julia_results.csv", df)

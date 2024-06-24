@@ -5,7 +5,7 @@ function sieve_of_eratosthenes(limit)
 
     while p^2 <= limit
         if is_prime[p]
-            for i in p^2:p:limit
+            for i = p^2:p:limit
                 is_prime[i] = false
             end
         end
@@ -13,7 +13,7 @@ function sieve_of_eratosthenes(limit)
     end
 
     primes = []
-    for p in 2:limit
+    for p = 2:limit
         if is_prime[p]
             push!(primes, p)
         end
@@ -22,7 +22,7 @@ function sieve_of_eratosthenes(limit)
     return primes
 end
 
-function p_0007(n::Integer=10_001)
+function p_0007(n::Integer = 10_001)
     limit = 200_000
     primes = sieve_of_eratosthenes(limit)
 

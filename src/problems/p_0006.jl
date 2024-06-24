@@ -7,7 +7,7 @@ function square_of_sum(n::Integer)
     return sum * sum
 end
 
-function p_0006(n::Integer=100)
+function p_0006(n::Integer = 100)
     sum_squares = sum_of_squares(n)
     square_sum = square_of_sum(n)
     return square_sum - sum_squares
