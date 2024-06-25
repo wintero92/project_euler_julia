@@ -14,6 +14,7 @@ include("problems/p_0011.jl")
 include("problems/p_0012.jl")
 include("problems/p_0013.jl")
 include("problems/p_0014.jl")
+include("problems/p_0015.jl")
 
 solved_problems = [
     p_0001,
@@ -30,6 +31,7 @@ solved_problems = [
     p_0012,
     p_0013,
     p_0014,
+    p_0015
 ]
 
 export solved_problems

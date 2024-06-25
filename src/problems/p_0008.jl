@@ -23,10 +23,10 @@ function p_0008(number_str::String = """
     number_str = replace(number_str, r"\s" => "")
     max_product = 0
 
-    for i = 1:(length(number_str)-k+1)
+    for i in 1:(length(number_str) - k + 1)
         product = 1
-        for j = 0:(k-1)
-            product *= parse(Int, number_str[i+j])
+        for j in 0:(k - 1)
+            product *= parse(Int, number_str[i + j])
         end
         if product > max_product
             max_product = product

@@ -1,7 +1,7 @@
 function count_divisors(n::Integer)
     count = 0
     sqrt_n = floor(Int, sqrt(n))
-    for i = 1:sqrt_n
+    for i in 1:sqrt_n
         if n % i == 0
             if i * i == n
                 count += 1

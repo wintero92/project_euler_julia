@@ -39,7 +39,7 @@ df = DataFrame(
     Mean_Time_ns = mean_times,
     Stddev_Time_ns = stddev_times,
     Sigma_Low_ns = sigma_low_times,
-    Sigma_High_ns = sigma_high_times,
+    Sigma_High_ns = sigma_high_times
 )
 
 CSV.write("julia_results.csv", df)

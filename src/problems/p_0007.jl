@@ -5,7 +5,7 @@ function sieve_of_eratosthenes(limit)
 
     while p^2 <= limit
         if is_prime[p]
-            for i = p^2:p:limit
+            for i in (p^2):p:limit
                 is_prime[i] = false
             end
         end
@@ -13,7 +13,7 @@ function sieve_of_eratosthenes(limit)
     end
 
     primes = []
-    for p = 2:limit
+    for p in 2:limit
         if is_prime[p]
             push!(primes, p)
         end

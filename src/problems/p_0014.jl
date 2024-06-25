@@ -16,13 +16,13 @@ function collatz_length(n, cache)
 end
 
 function p_0014(limit::Integer = 1_000_000)
-    cache = Dict{Int,Int}()
+    cache = Dict{Int, Int}()
     cache[1] = 1
 
     max_length = 0
     max_starting_number = 1
 
-    for i = 2:limit-1
+    for i in 2:(limit - 1)
         length = collatz_length(i, cache)
         if length > max_length
             max_length = length

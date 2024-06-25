@@ -1,7 +1,6 @@
 using ProjectEuler
 using Test
 
-
 include("solutions.jl")
 
 @testset "ProjectEuler.jl" begin

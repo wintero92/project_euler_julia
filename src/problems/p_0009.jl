@@ -1,6 +1,6 @@
 function p_0009(sum::Integer = 1000)
-    for m = 2:floor(Int, sqrt(sum))
-        for n = 1:(m-1)
+    for m in 2:floor(Int, sqrt(sum))
+        for n in 1:(m - 1)
             a = m^2 - n^2
             b = 2 * m * n
             c = m^2 + n^2
