@@ -1,5 +1,6 @@
 module ProjectEuler
 
+include("problems/common.jl")
 include("problems/p_0001.jl")
 include("problems/p_0002.jl")
 include("problems/p_0003.jl")

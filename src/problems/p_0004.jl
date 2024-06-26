@@ -1,5 +1,3 @@
-include("common.jl")
-
 """
     p_0004(digits::Integer = 3)::Integer
 
