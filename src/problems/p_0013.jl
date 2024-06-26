@@ -1,5 +1,27 @@
-function p_0013(
-        numbers = [
+"""
+    p_0013(numbers::Vector{String}) -> BigInt
+
+Computes the first ten digits of the sum of one hundred 50-digit numbers. This function converts each string
+representation of the numbers into `BigInt` for precise large integer arithmetic, sums them up, and then extracts
+the first ten digits of the resulting sum.
+
+# Arguments
+- `numbers::Vector{String}`: A vector of strings where each string represents a large number.
+
+# Returns
+- `BigInt`: The first ten digits of the sum of the provided numbers.
+
+# Examples
+```julia
+julia> numbers = [
+        "37107287533902102798797998220837590246510135740250",
+        "46376937677490009712648124896970078050417018260538",
+        # ... (98 more numbers)
+    ]
+julia> p_0013(numbers)
+3710728753  # Example output
+"""
+function p_0013(numbers::Vector{String} = [
         "37107287533902102798797998220837590246510135740250",
         "46376937677490009712648124896970078050417018260538",
         "74324986199524741059474233309513058123726617309629",
@@ -100,9 +122,12 @@ function p_0013(
         "72107838435069186155435662884062257473692284509516",
         "20849603980134001723930671666823555245252804609722",
         "53503534226472524250874054075591789781264330331690"
-],
-)
+],)::BigInt
+    # Convert each number from String to BigInt
     big_numbers = [parse(BigInt, num) for num in numbers]
+    # Sum all the BigInt numbers
     total_sum = sum(big_numbers)
+
+    # Extract the first 10 digits of the sum as a string, then parse back to BigInt
     return parse(BigInt, string(total_sum)[1:10])
 end
